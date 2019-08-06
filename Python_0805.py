@@ -2,21 +2,18 @@
 scores = [80, 100, 70, 90, 40]
 
 # 1. total 함수 만들기
-def total(list):
-    sum = 0
-    for i in list:
-        sum += i
-    return print(sum)
+def total(x):
+    t = 0
+    for i in x:
+        t += i
+    return t
 
 # 2. average 함수 만들기
-def average(list):
-    sum = 0
-    for i in list:
-        sum += i
-    return print(sum/len(list))
+def average(x):
+    return total(x)/len(x)
 
 # 3. 제대로 했는지 확인하기
-total(scores)
-average(scores)
+print(total(scores))
+print(average(scores))
 
 # 4. 코드를 Github에 올리기
