@@ -48,5 +48,7 @@ def factorial(n):
     return accumulator
 
 def test_factorial():
+    assert factorial(2) == 2
     assert factorial(10) == 1024
     assert factorial(10) == 3628800
+
